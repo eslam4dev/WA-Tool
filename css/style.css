@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "Harmattan", sans-serif;
+}
+body {
+  line-height: 1.5;
+  direction: rtl;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 70vh;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+nav {
+  display: flex;
+  direction: ltr;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: auto;
+  height: 70px;
+  width: 100%;
+  padding: 20px;
+}
+nav .logo {
+  flex: 1;
+  direction: ltr;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: ltr;
+}
+nav ul li {
+  display: block;
+  margin-left: 20px;
+  padding: 10px;
+  transition: 0.3s;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+}
+nav ul li:first-child {
+  background-color: #25d366;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+nav ul li:hover {
+  background-color: #25d366;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+nav ul li:first-child a {
+  color: white;
+}
+nav ul li:hover a {
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .texts {
+  margin-top: 60px;
+  text-align: center;
+  line-height: 2;
+}
+.content .texts h2 {
+  font-size: 24px;
+}
+.content .texts p {
+  font-size: 16px;
+  color: #666;
+}
+.content form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 88px;
+}
+.content form input[type="tel"] {
+  display: block;
+  border: 1px solid #ced4da;
+  color: #212529;
+  height: 30px;
+  padding: 5px;
+}
+.content form input:focus {
+  outline: none;
+}
+.content form textarea {
+  resize: none;
+  min-height: 100px;
+  width: 300px;
+  border: 1px solid #ced4da;
+  padding: 5px;
+}
+.content form textarea:focus {
+  outline: none;
+}
+::placeholder {
+  text-align: center;
+}
+.content form input[type="submit"] {
+  display: block;
+  color: white;
+  font-weight: bold;
+  background-color: #25d366;
+  border: 1px solid #ced4da;
+  padding: 7px;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #111b21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(30vh - 70px);
+}
+.footer p {
+  color: #ffffff;
+  padding-top: 20px;
+  font-size: 18px;
+}
+.footer p i {
+  font-size: 14px;
+  color: red;
+  margin-right: 5px;
+}
+.footer .contact {
+  list-style: none; /* إزالة النمط الافتراضي للقائمة */
+  display: flex; /* جعل القائمة أفقيّة */
+  justify-content: center; /* محاذاة العناصر أفقياً في المنتصف */
+  align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+  gap: 20px; /* المسافة بين العناصر */
+  margin-top: 20px;
+  padding: 0; /* إزالة التباعد الداخلي الافتراضي لـ ul */
+}
+
+.footer .contact li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .contact li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.footer .contact li a i {
+  font-size: 32px;
+  color: #1877f2;
+}
